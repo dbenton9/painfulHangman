@@ -32,19 +32,20 @@ console.log(Word());
 
 // ************** Letter constructor **************
 // checks user gues against word
-// function Letter(word) {
-//     this.dashes = function() { // function builds out initial dashed word
-//                     for (i = 0; i < word.length; i++) {
-//                     // buid a word with dashes
-//                     }
-//     };
-//     this.correct = function() { // function updates word with correct guesses
-//                     // if correct guess, replace dash with letter
-//                     // Bonus: add guessed letters to array
-//     };
-//     this.incorrect = function() { // function keeps track of wrong guesses
-//                         // if incorrect guess, show guesses remaining
-//                         // Bonus: add guessed letters to array
-//     };
-// };
+function Letter() {
+    this.dashes = function() { // function builds out initial dashed word
+        var mysteryWord = Word();         
+        for (i = 0; i < mysteryWord.length; i++) {
+                    // buid a word with dashes
+                    }
+    };
+    this.correct = function() { // function updates word with correct guesses
+                    // if correct guess, replace dash with letter
+                    // Bonus: add guessed letters to array
+    };
+    this.incorrect = function() { // function keeps track of wrong guesses
+                        // if incorrect guess, show guesses remaining
+                        // Bonus: add guessed letters to array
+    };
+};
 // **************************************************
